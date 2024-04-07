@@ -18,7 +18,6 @@ TArray<FName> UGameIdManagerConfig::GetGameIDs(FName Category, bool IncludeNoneI
 	return {};
 }
 
-
 TArray<FName> UGameIdManagerConfig::GetSortedIDs(TArray<FName> IDList, bool IncludeNoneId)
 {
 	if (IncludeNoneId)

@@ -16,7 +16,6 @@ TSharedPtr<SGraphPin> FGameIdPinFactory::CreatePin(UEdGraphPin* InPin) const
 		if (InPin->LinkedTo.Num() == 0 && InPin->PinType.PinCategory == K2Schema->PC_Name || InPin->PinType.PinCategory == K2Schema->PC_String)
 		{
 			FString NodeName = InPin->GetOwningNode()->GetNodeTitle(ENodeTitleType::MenuTitle).ToString();
-			// FName FunctionName = FName(InPin->GetOwningNode()->GetNodeTitle(ENodeTitleType::ListView).ToString());
 			FName PinName = FName(InPin->GetName());
 
 			TArray<TSharedPtr<FString>> NameListForPin;
